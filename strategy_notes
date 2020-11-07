@@ -1,0 +1,59 @@
+Tading notes:
+
+Technical Analysis:
+	Technical indicators are calculations based on historic price, volume, or open interest information to predict asset price direction. 
+
+	Fundamental analysis is analysis of stock's financia;s or operational details.
+
+	Fundamental part of technical analysis is based on analyzing trends, chart patterns, price action, etc.
+
+	Popular technical indicators:
+		MACD: Moving average convergence divergence
+			- difference between two exponential moving averages (closing price) (typically 12 period (fast) MA and 26 period (slow) MA)
+			- signal line is also calculated (another moving average typically 9 day period) of the MACD line as calculated
+			- If the MACD line cuts the signal line from below it signals a bullish period. If the MACD line cuts the signal line from above it signals a bearish period - Called a crossover strategy
+			- This indicator creates a lot of false positives - especially during a sideways market
+			- Should be used in conjuction with other indicators
+			- lagging indicator - meaning by the time the signal is realized you're behind the market
+		Bollinger Bands & ATR (Average True Range)
+			- Analyzes volatility - considered volatility based indicators
+			- Bollinger bands:
+				- Uses two different plot lines
+				- one is the standard deviation (of 2 over a 20 day period) above the simple moving average line and the other is the standard deviation below the simple moving average line
+				- The bands widen during periods of increased volatility and shrink during reduced volatility
+				- Typically when bands shrink it means there's potential to make some money
+			- ATR:
+				- Looks at ranges 
+					- difference between high/low
+					- difference between high and previous days close
+					- difference between low and previous days close
+					- take the average of all of those
+				- Looks at price range over certain trading periods. Conveys how wildly the market is swinging
+			- If ATR and Bollinger Bands are within a tight band it's highly likely a breakout or trend will start to form
+			- If ATR is trending down it means volatility is decreasing and could mean something good is about to happen
+			- Look for the squeeze!!!
+		RSI: Relative Strength Index
+			- A momentum oscillator which measures the speed and change of price movements
+				- It analyzes the strength of the price value at a given moment compared to previous prices
+			- RSI value oscillates between 0 and 100 with values above 70 indicating that the asset has now reached overbought territory and a correction is expected. Values below 30 signal oversold territory and the price is expected to go up.
+			- Assets can remain in overbought and oversold territories for long durations. Meaning if it's over 70 you might think it's a good idea to short it but it might stay there for a long time.
+			- Calculation follows a two step method wherein the second step acts as a smothering technique (similar to calculating exponential moving average)
+		ADX: Average Directional Index
+			- ADX is a way of measuring the strength of a trend
+			- Values range from 0-100 and qunatifies the strength of a trend as:
+				- 0-25: Absent or weak trend
+				- 25-50: strong trend 
+				- 50-75: very strong trend
+				- 75-100: Extremely strong trend
+			- ADX is non directional. Meaning it makes no inference about the direction of the trend but only the strength of the trend. 
+			- The calculation involves finding both positive and negative directional movement (by comparing successive highs and successive lows) and then calculating the smoothed average of the difference 
+		Supertrend
+		Renko Charts 
+
+Platform layout: # check Fidelity's dev tools for use cases
+	- Drop down menu allows you to select market (Nasdaq/NYSE/etc.)
+	- Drop down allows you to select different technical indicators
+	- Heatmap of every stock in each market based on their performance for each technical indicator
+	- Clicking on each stock in the heatmap shows details of that indicator/charts/etc.
+	- Personal portfolio chart that shows daily gains / losses and gives lifetime average gains/losses - mostly use this to track success / failures of strategy
+	- create training and testing data sets based on your trades. You'll have to start with an unsupervised model. But eventually you can create a supervised model with a label column of positive/ negative depending on how the trade performed and the features will be the technical indicators used in each trade. Might want to think about trying to use size of gains/ losses in label to create a more efficient trading algorithm
