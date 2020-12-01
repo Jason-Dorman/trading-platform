@@ -46,7 +46,13 @@ Technical Analysis:
 				- 50-75: very strong trend
 				- 75-100: Extremely strong trend
 			- ADX is non directional. Meaning it makes no inference about the direction of the trend but only the strength of the trend. 
-			- The calculation involves finding both positive and negative directional movement (by comparing successive highs and successive lows) and then calculating the smoothed average of the difference 
+			- The calculation involves finding both positive and negative directional movement (by comparing successive highs and successive lows) and then calculating the smoothed average of the difference
+		OBV: On Balance Volume
+			- OBV is a momentum indicator which uses changes in trading volume and an indicator of future asset price moves. Theory that volume preceeds price movement. So when volume increases price usually plays catch up.
+			- OBV formulation is based on the theory that volume preceeds price movement. A rising OBV reflects positive volume pressure that can lead to higher prices and falling OBV predicts decline in prices
+			- OBV is a leading market indicator(meaning it preceeds the real world values) but prone to making false signals. It's typrically used in conjuction with lagging indicators such as MACD
+			- OBV is calculated by the cumulative sum of volume traded adjusted for the direction of corresponding asset price move.
+			- Rising OBV is a prediction that prices are going to go up.
 		Supertrend
 		Renko Charts 
 
