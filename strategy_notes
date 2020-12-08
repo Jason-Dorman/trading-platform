@@ -54,7 +54,11 @@ Technical Analysis:
 			- OBV is calculated by the cumulative sum of volume traded adjusted for the direction of corresponding asset price move.
 			- Rising OBV is a prediction that prices are going to go up.
 		Supertrend
-		Renko Charts 
+		Renko Charts
+			- Renko charts are built using price movement and not price against standardized time intervals - This filters out the noise and lets you visualize the true trend. 
+			- Price movements (fixed) are represented as bricks stacked at 45 degrees to each other. A new brick is added to the chart only when the price moves by a pre-determined amount in either direction.
+			- Renko charts have a time axis but the time scale is not fixed. Some bricks may take longer to form than others depending on how long it takes the price to move the required box size.
+			- Renko charts typically use only the closing price based on the chart time frame chosen.
 
 Platform layout: # check Fidelity's dev tools for use cases
 	- Drop down menu allows you to select market (Nasdaq/NYSE/etc.)
