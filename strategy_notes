@@ -60,7 +60,29 @@ Technical Analysis:
 			- Renko charts have a time axis but the time scale is not fixed. Some bricks may take longer to form than others depending on how long it takes the price to move the required box size.
 			- Renko charts typically use only the closing price based on the chart time frame chosen.
 
+	Performance measurement:
+		KPIs used to measure risk and return characteristic of the strategy.
+
+		Popular performance measurements:
+			- Cumulative annual growth
+			- Annualized volitility (standard deviation)
+			- Sharpe ratio/ sortino ratio
+			- Maximum drawdown
+			- Calmar ratio
+
+			Compounded annual growth rate:
+				- One of the most important KPIs to know. Especially when looking at funds
+				- CAGR is the annual rate of return realized by an asset/ portfolio to reach its current market value from its initial value
+					- So if you make a $1 investment and after five years it's worth $5 your total return is 100%
+					- But people generally talk about returns as annualized returns not total returns
+				- CAGR calculation assumes profits are continuously reinvested
+					- CAGR = (end value / beginning value)^(1/years) - 1
+						- CAGR assumes the profits are never pulled out so they're continuously reinvested
+				- provides ease of comparison between different trading strategies
+				- does not reflect invstment risk and therefore should always be used in conjunction with a volatility measure
+
 Platform layout: # check Fidelity's dev tools for use cases
+	- check out talib for pattern recognition
 	- Drop down menu allows you to select market (Nasdaq/NYSE/etc.)
 	- Drop down allows you to select different technical indicators
 	- Heatmap of every stock in each market based on their performance for each technical indicator
